@@ -28,6 +28,8 @@
   max-width: 80%;
   height: auto;
   object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 @media (max-width: 768px) {
