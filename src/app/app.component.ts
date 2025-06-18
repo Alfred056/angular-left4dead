@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['../demo-styling.css']
 })
 export class AppComponent {
-  title = 'angular-quickstart';
+  @HostListener('document:mousedown', ['$event'])
+  onMouseDown() {
+    document.body.style.cursor = 'url("assets/hacha_puntero2.png"), auto';
+  }
+
+  @HostListener('document:mouseup', ['$event'])
+  onMouseUp() {
+    document.body.style.cursor = 'url("assets/hacha_puntero.png"), auto';
+  }
 }

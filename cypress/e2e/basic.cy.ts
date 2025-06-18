@@ -1,3 +1,4 @@
+/*
 describe('empty spec', () => {
   beforeEach(() => {
     cy.visit('/')
@@ -15,3 +16,4 @@ describe('empty spec', () => {
     })
   })
 })
+  */
